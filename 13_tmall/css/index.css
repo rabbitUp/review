@@ -1,0 +1,577 @@
+@import url(./base.css);
+figure{
+	padding: 0;
+	margin: 0;
+}
+#wrapper{
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:1;
+}
+/*头部导航栏*/
+header{
+	width: 100%;
+	height: auto;
+}
+nav{
+	width: 100%;
+	height: 45px;
+	background: linear-gradient(to bottom,#333 ,rgba(0,0,0,0));
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+nav .left,
+nav .center,
+nav .right{
+	float: left;
+}
+nav .left{
+	width: 15%;
+	height: 100%;
+	padding: 2% 4%;
+	box-sizing: border-box;
+}
+nav .left i{
+	color: #fff;
+	font-size: 22px;
+}
+nav .center{
+	width: 70%;
+	height: 37px;
+	margin: 4px;
+	border-radius: 5%;
+	background: #fff;
+}
+nav .center input{
+	border: none;
+	width: 90%;
+	height: 100%;
+	border-radius: 2%;
+}
+nav .right{
+	width: 11.5%;
+	height: 100%;
+}
+nav .right a{
+	color: #fff;
+	padding-top: 30%;
+	margin-left: 20%;
+	font-size: 12px;
+}
+/*banner图*/
+article{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+section.banner{
+	width: 100%;
+	height: 185px;
+	overflow: hidden;
+}
+section.banner a{
+	display: block;
+	width: 100%;
+}
+section.banner a img{
+	width: 100%;
+}
+
+/*插件*/
+.container {
+      margin: 0 auto;
+      height: 100%;
+    }
+#slides .slidesjs-navigation {
+      margin-top:5px;
+    }
+
+a.slidesjs-next,
+a.slidesjs-previous,
+a.slidesjs-play,
+a.slidesjs-stop {
+      background-repeat: no-repeat;
+      display:block;
+      width:12px;
+      height:18px;
+      overflow: hidden;
+      text-indent: -9999px;
+      float: left;
+      margin-right:5px;
+    }
+section.banner .slidesjs-pagination {
+      margin: -6.8rem 8.3rem 0;
+      float: right;
+      position: relative;
+      z-index: 99;
+      list-style: none;
+    }
+
+.slidesjs-pagination li {
+      float: left;
+      margin: 0 .1rem;
+    }
+
+.slidesjs-pagination li a {
+      display: block;
+      width: .5rem;
+      height: 0;
+      padding-top: .5rem;
+      background: #666;
+      background-position: 0 0;
+      border-radius: 50%;
+      float: left;
+      overflow: hidden;
+    }
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+	  width: .49rem;
+	  padding-top: .4rem;
+	  border: .01rem solid #333;
+	  box-sizing: border-box;
+      background-position: 0 -13px;
+      background: #fff;
+    }
+
+.slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+#slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+#slides a:hover,
+#slides a:active {
+      color: #9e2020
+    }
+
+.navbar {
+      overflow: hidden
+    }
+    
+    
+/*插件结束*/
+section.banner img{
+	width: 100%;
+	height: 185px;
+}
+/*导航*/
+section.nav{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+section.nav ul{
+	width: 100%;
+	height: 130px;
+}
+section.nav ul li{
+	float: left;
+	width: 20%;
+	height: 57px;
+	padding: 4px;
+	box-sizing: border-box;
+	text-align: center;
+	margin-bottom: 14px;
+}
+section.nav ul li a{
+	display: block;
+	color: #333;
+	font-size: 12px;
+}
+section.nav ul li a img{
+	width: 36px;
+}
+section.nav ul li a p{
+	line-height: 24px;
+}
+/*热点*/
+section.hot{
+	width: 100%;
+	height: 40px;
+	margin: 10px 0px;
+}
+section.hot .hot-left{
+	width: 16%;
+	height: 100%;
+	margin-left: 7px;
+	margin-right: 5px;
+	border-right: 1px solid #dfdfdf;
+	float: left;
+}
+section.hot .hot-left img{
+	width: 54px;
+}
+section.hot .hot-right{
+	float: right;
+	width: 80%;
+	height: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+section.hot .hot-right img{
+	width: 22px;
+	margin-top: 8px;
+	float: left;
+}
+section.hot .hot-right .content{
+	width: 90%;
+	height: 2rem;
+	overflow: hidden;
+	float: right;
+}
+section.hot .hot-right .content .swiper-slide a{
+	color: #333;
+	font-size: 12px;
+}
+section.hot .hot-right .content .swiper-slide a p{
+	line-height: 16px;
+}
+section.hot .hot-right .content .swiper-slide a.active{
+	color: #FF5252;
+}
+section.ad{
+	width: 100%;
+	height: 111px;
+	background: #F0F0F0;
+}
+section.ad .box{
+	width: 200%;
+	height: 98%;
+	overflow: hidden;
+}
+section.ad .ad-box{
+	width: 22.5%;
+	height: 100%;
+	margin: .5% .5% .5% 0;
+	float: left;
+}
+section.ad .ad-box img{
+	width: 100%;
+}
+section.rob{
+	width: 100%;
+	height: auto;
+}
+.title{
+	width: 100%;
+	height: 20px;
+	background: #f0f0f0;
+	padding: 1% 0;
+	text-align: center;
+}
+.title h2{
+	font-size: 14px;
+	font-weight: normal;
+	float: left;
+	color: #EE3C41;
+}
+.title i img{
+	float: left;
+	width: 16px;
+	margin-top: .5%;
+	margin-left: 3%;
+	margin-right: 1%;
+}
+.title p{
+	padding:2.5% 0px;
+}
+.title p:first-child{
+	width: 10%;
+	height: 20%;
+	float: left;
+	margin-left: 32%;
+}
+.title p:last-child{
+	width: 10%;
+	height: 20%;
+	float: right;
+	margin-right: 32%;
+}
+.title p span{
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #EE3C41;
+}
+section.rob .rob-box{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+section.rob ul{
+	width: 100%;
+}
+ul.rob-box li{
+	width: 25%;
+	height: 50%;
+	box-sizing: border-box;
+	float: left;
+}
+ul.rob-box li:nth-child(4){
+	border-left: 1px solid #F0F0F0;
+	border-bottom: 1px solid #F0F0F0;
+}
+ul.rob-box li:nth-child(8){
+	border-left: 1px solid #F0F0F0;
+}
+ul.rob-box li figure{
+	width: 100%;
+	height: 100%;
+}
+ul.rob-box li figure img{
+	width: 78.33px;
+	margin: 0 6%;
+}
+ul.rob-box li figure figcaption{
+	text-align: center;
+}
+ul.rob-box li figure figcaption:last-child span{
+	text-decoration: line-through;
+	color: #9B9B9B;
+}
+ul.rob-box li figure figcaption:first-child{
+	font-size: 14px;
+	color: #333;
+}
+ul.rob-box li figure figcaption:last-child{
+	font-size: 12px;
+	color: #FF3B2E;
+	margin: 6% 0;
+}
+ul.rob-box li a{
+	display: block;
+}
+/*潮流酷玩*/
+.paly .title{
+	line-height: 100%;
+}
+.play .title p:first-child{
+	margin-left: 28%;
+}
+.play .title p:last-child{
+	margin-right: 28%;
+}
+.play .title p span{
+	background: #598AE5;	
+}
+.play .title h2{
+	color: #598AE5;
+}
+.play ul,
+.super ul{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.play ul li{
+	width: 33.333333%;
+	height: auto;
+	float: left;
+}
+.play ul li img{
+	width: 100%;
+}
+.super ul li{
+	width: 50%;
+	height: auto;
+	float: left;
+}
+.super ul li a,
+.play ul li a{
+	display: block;
+}
+.super ul li img{
+	width: 100%;
+}
+.super .title span{
+	background: #FE8A16;
+}
+.super .title h2{
+	color: #FE8A16;
+}
+.super .title p:first-child,
+.fast .title p:first-child{
+	margin-left: 28%;
+}
+.super .title p:last-child,
+.fast .title p:last-child{
+	margin-right: 28%;
+}
+.paizi ul li:last-child{
+	width: 100%;
+}
+.paizi .title span{
+	background: #009F8A;
+}
+.paizi .title h2{
+	color: #009F8A;
+}
+a{
+	display: block;
+}
+/*便捷生活*/
+.fast ul{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.fast ul li{
+	float: left;
+}
+.fast ul li:first-child{
+	width: 40%;
+}
+.fast ul li:not(:first-child){
+	width: 60%;
+	height: auto;
+}
+.fast ul li img{
+	width: 100%;
+}
+.fast .title p span{
+	background: #43AF00;
+}
+.fast .title h2{
+	color: #43AF00;
+}
+.sea .title i img{
+	margin-top: 1%;
+}
+.sea .title p span{
+	background: #8828DD;
+}
+.sea .title h2{
+	color: #8828DD;
+}
+/*精选市场*/
+.prefert ul li{
+	width: 25%;
+	border-bottom: 1px solid #F0F0F0;
+}
+.prefert ul li:nth-child(5){
+	width: 50%;
+}
+.prefert ul li:last-child{
+	width: 50%;
+}
+.prefert .title p span{
+	background: #E14CA7;
+}
+.prefert .title h2{
+	color: #E14CA7;
+}
+/*爱生活*/
+.like ul li{
+	width: 25%;
+}
+.like .title p span{
+	background: #36C1FD;
+}
+.like .title h2{
+	color: #36C1FD;
+}
+/*热门行业*/
+.product ul li{
+	width: 25%;
+	border: 1px solid #f0f0f0;
+	box-sizing: border-box;
+}
+.product ul li:first-child{
+	width: 50%;
+}
+.product ul li:nth-child(2){
+	width: 50%;
+}
+.product ul li:first-child img,
+.product ul li:nth-child(2) img{
+	width: 50%;
+	float: right;
+	margin-top: -20%;
+}
+.product ul li:first-child figure figcaption,
+.product ul li:nth-child(2) figure figcaption{
+	width: 50%;
+	text-align: center;
+}
+.product ul li figure figcaption:first-child{
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 5%;
+}
+.product ul li a{
+	color: #333;
+}
+.product ul li figure figcaption:nth-child(2){
+	font-size: 13px;
+	color: #666;
+}
+.product ul li a figure figcaption{
+	text-align: center;
+}
+.product ul li figure img{
+	width: 80%;
+	margin: 0 10%;
+	padding-top: 5%;
+}
+/*品牌旗舰*/
+.brand .title p span{
+	background: #706F79;
+}
+.brand .title h2{
+	color: #706F79;
+}
+.brand ul{
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+}
+.brand ul li{
+	width: 50%;
+	padding: 0 3px;
+	box-sizing: border-box;
+	height: auto;
+}
+.brand ul li div.brand-img{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.brand ul li div.brand-img img{
+	border: 1px solid #fff;
+	box-sizing: border-box;
+	float: left;
+	width: 33%;
+	height: auto;
+}
+.brand ul li div.brand-img img:first-child{
+	width: 67%;
+}
+.brand ul li div.brand-font{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+}
+.brand ul li div.brand-font .brand-fot{
+	width: 100%;
+	height: 10px;
+}
+.brand ul li div.brand-font img{
+	padding: 6px 0px;
+	width: 24px;
+	height: 24px;
+}
+.brand ul li div.brand-fot p{
+	font-size: 12px;
+	margin-left: 6px;
+}
+.brand ul li div.brand-fot p:last-child{
+	color: #c0c0c0;
+}

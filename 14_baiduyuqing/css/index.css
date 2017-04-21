@@ -1,0 +1,621 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+header{
+	width: 100%;
+	height: 60px;
+	background: #168BD8;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+header nav{
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+}
+nav .navLeft{
+	width: 460px;
+	height: 100%;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+}
+nav .navLeft div{
+	width: 35%;
+	background: url(../img/small-icon.png) no-repeat 0px 10px;
+}
+nav .navLeft div a{
+	display: block;
+	height: 100%;
+	width: 120px;
+}
+nav .navLeft a{
+	display: block;
+	width: 14%;
+	height: 100%;
+	float: left;
+	color: #FFF;
+	font-size: 15px;
+	text-align: center;
+	line-height: 82px;
+}
+nav .navLeft a:hover{
+	color: #67CBF8;
+}
+nav .navRight{
+	width: 380px;
+	height: 100%;
+	float: right;
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+}
+nav .navRight a{
+	font-size: 12px;
+	color: #FFFFFF;
+	line-height: 88px;
+	position: relative;
+}
+nav .navRight a:first-child{
+	opacity: 0;
+	transition: opacity .5s;
+}
+nav .navRight a:nth-child(2){
+	display: block;
+	width: 26%;
+}
+nav .navRight a i{
+	display: block;
+	width: 30px;
+	height: 20px;
+	position: absolute;
+	top: 28px;
+	right: 10px;
+	background: url(../img/small-icon.png) no-repeat -90px -157px;
+}
+nav .navRight a:last-child{
+	color: #FFDA28;
+}
+nav .navRight div.mBox{
+	width: 322px;
+	height: 245px;
+	background: #FFFFFF;
+	position: absolute;
+	top: 100%;
+	left: -120px;
+	border: 1px solid #DDDDDD;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	display: none;
+	cursor: default;
+}
+nav .navRight div.mBox::before{
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #fff;
+	position: absolute;
+	top: -8px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+div.mBox h4{
+	text-align: center;
+	font-weight: normal;
+	height: 44px;
+	background: #F1F1F1;
+	line-height: 44px;
+	font-size: 18px;
+	color: #000;
+}
+div.mBox div.lef{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+div.mBox div.img{
+	width: 100%;
+	height: 120px;
+	margin-top: 20px;
+	background: url(../img/small-icon.png) no-repeat 30px -185px;
+}
+div.righ div.img{
+	background: url(../img/small-icon.png) no-repeat 8px -308px;
+}
+div.mBox div.righ{
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+div.mBox p{
+	width: 60px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	font-size: 14px;
+	margin: 20px auto;
+	background: #F5F5F5;
+	border-radius: 10px;
+	color: #000000;
+}
+.navRight a:nth-child(2):hover .mBox{
+	display: block;
+}
+/*第一屏*/
+.section5{
+	background: url(../img/bg-1.jpg);
+}
+/*字*/
+div.font{
+	width: 500px;
+	height: 158px;
+	position: absolute;
+	top: 124px;
+	left: 185px;
+	background: url(../img/oneFont.png) no-repeat;
+}
+/*飞机*/
+div.font img{
+	position: absolute;
+	right: 80px;
+	top: -10px;
+	animation: fly 1.5s linear infinite;
+}
+/*飞机飞*/
+@keyframes fly{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(-14px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+div.input{
+	width: 302px;
+	height: 260px;
+	padding: 20px;
+	background: #4EBFFC;
+	position: absolute;
+	top: 137px;
+	right: 186px;
+	border-radius: 5px;
+	z-index: 88;
+}
+div.input div{
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	background: #FFFFFF;
+	display: flex;
+	align-items: center;
+	margin-top: 4px;
+}
+div.input div i{
+	margin:0 9px;
+	color: #A1A6B7;
+}
+div.input input{
+	border: none;
+	width: 100%;
+	height: 40px;
+	outline: none;
+}
+div.input div:nth-child(3){
+	background: #4EBFFC;
+}
+div.input div:nth-child(3) input{
+	text-indent: .5em;
+}
+div.input div p.img{
+	width: 200px;
+	height: 100%;
+	margin-left: 10px;
+	overflow: hidden;
+}
+div.input div p img{
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+}
+div.input div a{
+	color: #FFFFFF;
+	display: block;
+	width: 30%;
+	font-size: 12px;
+	margin-left: 10px;
+}
+div.input a:hover{
+	text-decoration: underline;
+}
+#form > div{
+	position: relative;
+}
+#form div:nth-child(4){
+	margin-top: 30px;
+	background: #4EBFFC;
+}
+#form div:nth-child(4) input{
+	background: #FFD850;
+	color: #333;
+	font-size: 18px;
+	cursor: pointer;
+	border-radius: 2px;
+}
+#form > p i{
+	display: block;
+	width: 15px;
+	height: 17px;
+	background: url(../img/foot.png) no-repeat -204px -75px;
+	float: left;
+}
+#form > p {
+	margin-top: -10px;
+	line-height: 14px;
+}
+#form > p a{
+	color: #FFFFFF;
+	font-size: 12px;
+}
+#form > p a:last-child{
+	float: right;
+}
+/*船*/
+.ship{
+	width: 242px;
+	height: 248px;
+	background: url(../img/ship.png) no-repeat;
+	position: absolute;
+	left: 310px;
+	bottom: 70px;
+	z-index: 3;
+	transition:all 1s;
+}
+.section5 .bottom{
+	width: 100%;
+	height: 126px;
+	background: url(../img/bg-2.jpg) no-repeat;
+	position: absolute;
+	bottom: 0;
+	opacity: .9;
+}
+div.down{
+	width: 32px;
+	height: 35px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 345px;
+	margin: auto;
+	animation: down 1s linear infinite;
+	cursor: pointer;
+	z-index: 98;
+}
+/*向下箭头动*/
+@keyframes down{
+	0%{
+		transform: translateY(0);
+		opacity: .5;
+	}
+	50%{
+		transform: translateY(-10px);
+		opacity: 1;
+	}
+	100%{
+		opacity: .5;
+		transform: translateY(0);
+	}
+}
+div.down i{
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 30px;
+	color: #FFFFFF;
+	cursor: pointer;
+	z-index: 98;
+}
+/*岛*/
+.section5 .island{
+	width: 100%;
+	height: 175px;
+	position: absolute;
+	bottom: 0;
+}
+.section5 .island img{
+	display: block;
+	float: left;
+}
+.section5 .island img:nth-child(2){
+	margin-left: 568px;
+	margin-top: 36px;
+}
+.section5 .island img:nth-child(3){
+	margin-left: 155px;
+	margin-top: 2px;
+}
+/*云*/
+.section5 .cloud1{
+	width: 100%;
+	height: 1000px;
+	background: url(../img/cloud1.png) repeat;
+	position: absolute;
+	top: 0px;
+	animation: move 100s linear infinite;
+}
+.section5 .cloud2{
+	width: 100%;
+	height: 400px;
+	background: url(../img/cloud2.png) repeat;
+	position: absolute;
+	animation: move 180s linear infinite;
+	top: 134px;
+}
+.section5 .cloud3{
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	background: url(../img/cloud3.png) repeat;
+	animation: move 220s linear infinite;
+	bottom: 10px;
+}
+/*云动*/
+@keyframes move{
+	0%{
+		background-position: 2000px 0;
+	}
+	50%{
+		background-position:0 0;
+	}
+	100%{
+		background-position:-2000px 0;
+	}
+}
+/*第二屏*/
+.section6{
+	background: url(../img/bg-2.jpg) no-repeat;
+}
+.section6 .box,
+.section8 .box,
+.section7 .box{
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+	position: relative;
+}
+.section6 .left,
+.section8 .left,
+.section7 .left{
+	width: 446px;
+	height: 170px;
+	position: absolute;
+	left: 30px;
+	top: 240px;
+	opacity: 0;
+	/*transition: all .3s;*/
+}
+.section6 .left > div,
+.section8 .left > div,
+.section7 .left > div{
+	position: absolute;
+	right: 0;
+	width: 80%;
+}
+.section6 .left p:first-child{
+	width: 66px;
+	height: 123px;
+	position: absolute;
+	left: 0.4;
+	background: url(../img/font2.png);
+	perspective: 2000px;
+	transform-style: preserve-3d;
+	transform-origin: center 50%;
+	animation: font 1s ease-in infinite;
+}
+@keyframes font{
+	0%{
+		transform: rotateY(0);
+	}
+	80%{
+		transform: rotateY(360deg);
+	}
+	100%{
+		transform: rotateY(360deg);
+	}
+}
+.section6 .left >div h2,
+.section8 .left >div h2,
+.section7 .left >div h2{
+	font-weight: normal;
+	color: #FFFFFF;
+	font-size: 35px;
+}
+.section6 .left >div span,
+.section8 .left >div span,
+.section7 .left >div span{
+	color: #FFFFFF;
+	font-size: 20px;
+	line-height: 38px;
+	font-weight: 400;
+	opacity: .9;
+}
+.section6 .box .right{
+	width: 444px;
+	height: 427px;
+	position: absolute;
+	right: 36px;
+	top: 140px;
+	background: url(../img/Towhead.png);
+}
+
+.section6 .box .rect{
+	width: 100%;
+	height: 90px;
+	position: absolute;
+	bottom: 0;
+}
+.section6 .box .rect .one{
+	width: 44px;
+	height: 46px;
+	position: absolute;
+	bottom: 0;
+	left: 90px;
+	background: #35B568;
+}
+.section6 .box .rect .two{
+	width: 88px;
+	height: 100%;
+	background: #4AC179;
+	position: absolute;
+	left: 200px;
+}
+.section6 .box .rect .one:nth-child(3){
+	left: 288px;
+	background: #8AE75A;
+}
+.section6 .box .rect .one:nth-child(4){
+	background: #8AE75A;
+	left: 605px;
+}
+.section6 .box .rect .one:nth-child(5){
+	background: #4AC179;
+	left: 702px;
+}
+/*向下*/
+.section6 .down,
+.section7 .down{
+	top: 620px;
+}
+/*第三屏*/
+.section7{
+	background: url(../img/bg-3.jpg);
+}
+.section7 .box .right{
+	width: 444px;
+	height: 427px;
+	position: absolute;
+	right: 36px;
+	top: 200px;
+	background: url(../img/threehead.png) no-repeat;
+}
+.section7 .box .left{
+	top: 220px;
+}
+.section7 .left p:first-child{
+	width: 66px;
+	height: 123px;
+	position: absolute;
+	left: 0.4;
+	background: url(../img/font3.png);
+	perspective: 2000px;
+	transform-style: preserve-3d;
+	transform-origin: center 50%;
+	animation: font 1s ease-in infinite;
+}
+.section7 .bottom{
+	width: 100%;
+	height: 138px;
+	position: absolute;
+	bottom: 0;
+	background: url(../img/threeBom.png);
+}
+.section7 .circle{
+	width: 354px;
+	height: 354px;
+	position: absolute;
+	top: 60px;
+	left: -20px;
+}
+.section7 .circle div{
+	width: 88px;
+	height: 88px;
+	position: absolute;
+	left: 88px;
+	background: #33BB9A;
+}
+.section7 .circle div:nth-child(2){
+	top: 88px;
+	background: #29A2B8;
+	left: 0;
+}
+.section7 .circle div:nth-child(3){
+	top: 88px;
+	background: #60CF6E;
+	left: 176px;
+}
+.section7 .circle div:nth-child(4){
+	top: 176px;
+	left: 88px;
+	width: 176px;
+	height: 176px;
+	background: url(../img/circle.jpg) no-repeat;
+}
+.section7 .circle div:nth-child(5){
+	top: 176px;
+	background: #33BB9A;
+	left: 264px;
+}
+/*第四屏*/
+.section8{
+	background: url(../img/bg-4.jpg);
+}
+.section8 .box{
+	width: 900px;
+}
+.section8 .box .right{
+	width: 603px;
+	height: 361px;
+	position: absolute;
+	right: 36px;
+	top: 180px;
+	background: url(../img/lastR.png) no-repeat;
+}
+.section8 .box .left{
+	top: 200px;
+}
+.section8 .left p:first-child{
+	width: 66px;
+	height: 123px;
+	position: absolute;
+	left: 0.4;
+	background: url(../img/font4.png);
+	perspective: 2000px;
+	transform-style: preserve-3d;
+	transform-origin: center 50%;
+	animation: font 1s ease-in infinite;
+}
+.section8 .circle{
+	width: 284px;
+	height: 252px;
+	position: absolute;
+	left: -10px;
+	top: 125px;
+	background: url(../img/circles.jpg) no-repeat;
+}
+p.er{
+	position: absolute;
+	top: 100%;
+	line-height: 20px;
+	background: url(../img/icons.png) no-repeat 0 2px;
+	text-indent: 1.5em;
+}
+span.bbox{
+	display: block;
+	width: 12px;
+	height: 12px;
+	background: url(../img/icons.png) no-repeat;	
+	position: absolute;
+	top: 0;
+	left: -15px;
+}

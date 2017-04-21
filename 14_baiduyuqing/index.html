@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/jquery.fullPage.css" />
+		<link rel="stylesheet" href="css/index.css"/>
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.validate.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="navLeft">
+					<div><a href="javascript:;"></a></div>
+					<a href="javascript:;">首页</a>
+					<a href="javascript:;">产品介绍</a>
+					<a href="javascript:;">用户版</a>
+				</div>
+				<div class="navRight">
+					<a href="javascript:;">登录</a>
+					<a href="javascript:;">手机客户端<i></i>
+						<div class="mBox">
+						<h4>扫码下载</h4>
+						<div class="lef">
+							<div class="img"></div>
+							<p>安卓</p>
+						</div>
+						<div class="righ">
+							<div class="img"></div>
+							<p>ios</p>
+						</div>
+					</div>
+					</a>
+					<a href="javascript:;">百度司南</a>
+					<a href="javascript:;">联系我们</a>
+					<a href="javascript:;">申请试用</a>
+				</div>
+			</nav>
+		</header>
+		<section>
+			<div id="fullpage">
+			    <div class="section section5">
+			    	<div class="font">
+			    		<img src="img/fly.png" alt="" />
+			    	</div>
+			    	<div class="input">
+			    		<form action=""id="form">
+			    			<div>
+			    				<i class="iconfont icon-username"></i>
+			    				<input type="text" name="user" id="user" placeholder="用户名"/>
+			    			</div>
+			    			<div>
+			    				<i class="iconfont icon-denglumima"></i>
+			    				<input type="password" name="pass" id="pass" placeholder="密码"/>
+			    			</div>
+			    			<div>
+			    				<input type="text" name="zheng" id="zheng" placeholder="验证码"/>
+			    				<p class="img"><img src="img/val.png" alt="" /></p>
+								<a href="javascript:;">换一张</a>
+			    			</div>
+			    			<div>
+			    				<input type="submit" name="sub" id="sub" value="登录"/>
+			    			</div>
+			    			<p>
+			    				<i></i><a href="javascript:;">&nbsp;安全控件常见问题</a>
+			    				<a href="javascript:;">忘记密码</a>
+			    			</p>
+			    		</form>
+			    	</div>
+			    	<div class="ship"></div>
+			    	<div class="bottom"></div>
+			    	<div class="island">
+			    		<img src="img/island1.png" alt="" />
+			    		<img src="img/island2.png" alt="" />
+			    		<img src="img/island3.png" alt="" />
+			    	</div>
+			    	<div class="cloud1"></div>
+			    	<div class="cloud2"></div>
+			    	<div class="cloud3">
+			    		<div class="down">
+			    			<a href="javascript:;">
+			    				<i class="iconfont icon-gpsshuangjiantou-copy"></i>
+			    			</a>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="section section6">
+			    	<div class="box">
+			    		<div class="left">
+			    			<p>
+			    				
+			    			</p>
+			    			<div>
+			    				<h2>数据收集与处理</h2>
+			    				<span>15年专业数据收集与语义分析技术积累卓越极致，不断攀登</span>
+			    			</div>
+			    		</div>
+			    		<div class="right"></div>
+			    		<div class="down">
+			    			<a href="javascript:;">
+			    				<i class="iconfont icon-gpsshuangjiantou-copy"></i>
+			    			</a>
+			    		</div>
+			    		<div class="rect">
+			    			<div class="one"></div>
+			    			<div class="two"></div>
+			    			<div class="one"></div>
+			    			<div class="one"></div>
+			    			<div class="one"></div>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="section section7">
+			    	<div class="box">
+			    		<div class="circle">
+			    			<div></div>
+			    			<div></div>
+			    			<div></div>
+			    			<div></div>
+			    			<div></div>
+			    		</div>
+			    		<div class="left">
+			    			<p></p>
+			    			<div>
+			    				<h2>舆情分析逻辑与架构</h2>
+			    				<span>声量诊断、传播分析、情感提炼、受众画像有方法论，更有智慧</span>
+			    			</div>
+			    		</div>
+			    		<div class="right"></div>
+			    		<div class="down">
+			    			<a href="javascript:;">
+			    				<i class="iconfont icon-gpsshuangjiantou-copy"></i>
+			    			</a>
+			    		</div>
+
+			    	</div>
+			    	<div class="bottom"></div>
+			    </div>
+			    <div class="section section8">
+			    	<div class="box">
+			    		<div class="circle">
+			    		</div>
+			    		<div class="left">
+			    			<p></p>
+			    			<div>
+			    				<h2>专业数据可视化</h2>
+			    				<span>非凡的数据洞悉和可视化能力<br>精研数据，惊艳所见</span>
+			    			</div>
+			    		</div>
+			    		<div class="right"></div>
+			    	</div>
+			    </div>
+			</div>
+		</section>
+	</body>
+</html>
+<script>
+	$(document).ready(function(){
+	$('#form').validate({
+			rules:{
+				user:{
+					required:true,
+				},
+				pass:{
+					required:true,
+				},
+				zheng:{
+					required:true,
+				}
+			},
+			messages:{
+				user:{
+					required:'用户名不能为空',
+				},
+				pass:{
+					required:'密码不能为空',
+				},
+				zheng:{
+					required:'验证码不得为空',
+				}
+			},
+			errorElement:'p',
+			errorPlacement:function(error,val){
+				$(error).addClass('er').css({color:'#DD4545',fontSize:'10px'}).insertAfter(val);
+			}
+		});
+});
+</script>

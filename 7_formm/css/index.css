@@ -1,0 +1,49 @@
+table{
+	width: 800px;
+	height: auto;
+	margin: 0px auto;
+	border-radius: 5px;
+}
+h1{
+	text-align: center;
+	line-height: 20px;
+}
+table tr{
+	height: 30px;
+}
+table tr td{
+	text-align: center;
+	width: 20%;
+}
+div.del{
+	width: 70px;
+	height: 24px;
+	margin: 0 auto;
+	margin-top: 3px;
+	background: #ff6700;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+div#add{
+	width: 140px;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 3px;
+	background: #ff6700;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 30px;
+	text-align: center;
+}
+input{
+	width: 80%;
+	height: auto;
+	outline: none;
+	border: none;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	background: #ff6000;
+}

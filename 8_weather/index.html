@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>weather</title>
+		<script src="js/jquery.js"></script>
+	</head>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		img{
+			display: block;
+			position: absolute;
+			top: 30px;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+		ul{
+			width: 50%;
+			height: 500px;
+			overflow: auto;
+			margin: 30px auto;
+		}
+		li{
+			width: 18%;
+			height: 20px;
+			float: left;
+			text-align: center;
+			padding: 5px;
+			cursor: pointer;
+		}
+		h1{
+			text-align: center;
+			line-height: 50px;
+			margin-top: 30px;
+		}
+		input{
+			width: 200px;
+			height: 30px;
+			border: 1px solid #B5CDCD;
+			position: absolute;
+			top: 60px;
+			left: 60%;
+			text-indent: 1em;
+			outline: none;
+			border-radius: 5px;
+		}
+	</style>
+	<body>
+		<h1>天气预报</h1>
+		<ul>
+			
+		</ul>
+		<input type="text" name="search" id="search" placeholder="请输入要搜索的城市" />
+	</body>
+</html>
+<script>
+	$(document).ajaxStart(function(){
+		$('<img>').attr('src','img/load.gif').appendTo('body');
+	});
+	$(document).ajaxSuccess(function(){
+		$('img').remove();
+	});
+	$.getJSON('index.php').done(function(data){
+		data.forEach(function(val,index){
+			$('<li>').html(`${val.cityZh}`).attr('city',`${val.cityEn}`).appendTo('ul');
+		});
+		$('input').keyup(function(){
+			let zhi = this.value;
+			let newarr = [];
+			newarr = data.filter(function(val){
+				return val.cityZh.includes(zhi) || val.cityEn.includes(zhi);
+			});
+			$('ul').empty();
+			newarr.forEach(function(val){
+				$('<li>').html(`${val.cityZh}`).attr('city',`${val.cityZh}`).appendTo('ul');
+			});
+		});
+		$('ul').on('click','li',function(){
+			localStorage.city = $(this).attr('city');
+			location.href ='more.html';
+		});
+	});
+</script>

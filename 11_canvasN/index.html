@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>paint</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<div class="tool">
+			<div class="file">
+				<h2>基础</h2>
+				<button class="set">新建画布</button>
+				<button class="save">保存画布</button>
+				<button class="return">返回</button>
+			</div>
+			<div class="color">
+				<h2>颜色</h2>
+				<div class="one">
+					<h4>单色</h4>
+					<button class="stroke">轮廓</button>
+					<button class="fill">填充</button><br>
+					轮廓颜色：<input class="strokeStyle" type="color" name="color" /><br>
+					填充颜色：<input class="fillStyle" type="color" name="color" />
+				</div>
+				<div class="two">
+					<h4>渐变</h4>
+					<button class="linear">线性渐变</button>
+					<button class="radiu">径向渐变</button><br>
+					第一种颜色：<input type="color" name="color"/><br>
+					第二种颜色：<input type="color" name="color"/>
+				</div>
+			</div>
+			<div class="shape">
+				<h2>形状</h2>
+				<button class="line" >线</button>
+				<button class="rect">矩形</button>
+				<button class="raRect">圆角矩形</button>
+				<button class="circle">圆</button>
+				<button class="poly">多边形</button>
+				<button class="eraser">橡皮擦</button>
+			</div>
+			<div class="minute">
+				<h2>详细</h2>
+				线&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宽：<input id='lineWidth' type="text" value = '3'/><br>
+				矩形的弧度：<input id='r' type="text" value='30'/><br>
+				多边形边数：<input id='n' type="text" value = '3'/><br>
+				橡皮擦大小：<input id='eW' type="text" value= '10'/>
+			</div>
+		</div>
+		
+	</body>
+</html>
